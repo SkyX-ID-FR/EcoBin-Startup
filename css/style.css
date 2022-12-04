@@ -15,7 +15,25 @@
 
 html {
     color: black;
-    font-size: normal;
+    font-size: 15px;
     font-family: Raleway;
     font-weight: 400;
+    padding-top: 15px;
+
+    /* For the nav-bar style viewer frame : */
+    height: 300vh;
+}
+
+/* 👀 Nav-bar style : 👀 */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb:hover { background: rgb(135, 135, 135); }
+
+::-webkit-scrollbar-thumb { 
+    background: rgb(187, 187, 187); 
+    border-radius: 5px;
+}
+
+.message-cntr {
+    text-align: center;
 }
