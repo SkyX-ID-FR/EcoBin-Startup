@@ -9,3 +9,14 @@
     ░░░░░░░░░░  ░░░░░░   ░░░░░░      ░░░░░░░░░░░  ░░░░░ ░░░░ ░░░░░©
     2022-23 Eco'Bin© Society - Website developed by Louis.M & Tim.S
 */
+
+/* 🔗 CDN Fonts links on the website : 🔗 */
+/* Accepting font-weight : 100/200/300/400/500/600/700/800/900 - Extra Bold/Bold/Medium/Light */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    color: black;
+    font-size: normal;
+    font-family: Raleway;
+    font-weight: 400;
+}

@@ -9,3 +9,9 @@
     ░░░░░░░░░░  ░░░░░░   ░░░░░░      ░░░░░░░░░░░  ░░░░░ ░░░░ ░░░░░©
     2022-23 Eco'Bin© Society - Website developed by Louis.M & Tim.S
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
