@@ -18,8 +18,6 @@ html {
     font-size: 15px;
     font-family: Raleway;
     font-weight: 400;
-
-    /* For the nav-bar style viewer frame ;) */
     /* height: 300vh; */
 }
 
@@ -45,50 +43,22 @@ body {
 /* 📚 Header/Nav-Bar style : 📚 */
 header {
     padding: 8px 0px 5px;
-    /* box-shadow: 0px 0px 100px rgb(231, 231, 231); */
     width: 100%;
     margin-bottom: 10px;
     background: rgb(24,40,40);
-    background: linear-gradient(0deg, rgba(24,40,40,1) 0%, rgba(43,77,63,1) 50%, rgba(90,140,125,1) 100%);
+    /* background: linear-gradient(0deg, rgba(24,40,40,1) 0%, rgba(43,77,63,1) 50%, rgba(90,140,125,1) 100%); */
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.502);
 }
 
 header .app_logo {
-    margin-left: 20px;
-    width: 70px;
-    cursor: pointer;
-}
-
-header .app_logo:hover {
-    transition: all 0.2s;
-    transform: scale(1.15);
-}
-
-header .menu-list {
-    float: right;
-    margin-right: 80px;
-    margin-top: 23px;
-}
-
-header .menu-list li {
-    float: left;
-    margin-left: 30px; 
-    list-style-type: none;
-    cursor: pointer;
-
-    /* A voir si c'est beau ou pas ? */
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-header .menu-list li:hover {
-    transition: all 0.2s;
-    transform: scale(1.15);
+    margin-left: 30px;
+    width: 75px;
 }
 
 header .menu__mobile {
     width: 50px;
     float: right;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-right: 10px;
 }
 
@@ -97,7 +67,7 @@ header .menu__mobile {
     height: 20px;
     width: 30px;
     cursor: pointer;
-    background-color: transparrent;
+    background-color: transparent;
     z-index: 55;
 }
 
@@ -111,6 +81,7 @@ header .menu__mobile {
 
 .menu__mobile_button.active.menu__mobile_button:before, .menu__mobile_button.active.menu__mobile_button:after {
     top: 40%;
+    height: 2px;
 }
 
 .menu__mobile_button.active.menu__mobile_button:before {
@@ -141,10 +112,12 @@ header .menu__mobile {
 .menu__mobile_button span {
     top: 42.4999%;
     transform: translateY(-50%);
+    height: 3px;
 }
 
 .menu__mobile_button:before {
     top: 0;
+    height: 2px;
 }
 
 .menu__mobile_button:after {
@@ -154,7 +127,7 @@ header .menu__mobile {
 
 /* 😎 Burger Menu Pop'up style : 😎 */
 .popup-menu {
-    background-color: rgba(0, 0, 0, 0.205);
+    background-color: rgba(0, 0, 0, 0.675);
     backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
@@ -168,15 +141,35 @@ header .menu__mobile {
 
 .popup-menu ul {
     list-style-type: none;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.popup-menu ul li {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.popup-menu ul li:hover {
+    transform: scale(1.2);
+}
+
+.popup-menu ul li:active {
+    transform: scale(0.9);
 }
 
 .popup-menu.active2 {
     opacity: 1;
-    transition: opacity 0.8s ease-out; 
+    transition: opacity 0.4s ease-out; 
 }
 /* 😎 End of Burger Menu Pop'up style 😎 */
 
-.hero-section .title-description {
-    font-size: 20px;
-    /* grid-area: 1 / 1 / 6 / 6; */
+/* 📂 Contact Page style : 📂 */
+.hero-section {
+    padding-left: 50px;
+    padding-top: 20px;
 }
+/* 📂 Contact Page style 📂 */
