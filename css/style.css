@@ -23,6 +23,15 @@ html {
     /* height: 300vh; */
 }
 
+body {
+    background: url('https://www.wallpapertip.com/wmimgs/115-1156916_100-wallpaper-collection-all-album-on-imgur-minimalist.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white; 
+}
+
 /* 👀 Nav-bar style : 👀 */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }
@@ -35,32 +44,139 @@ html {
 
 /* 📚 Header/Nav-Bar style : 📚 */
 header {
-    padding: 25px 35px 25px;
-    box-shadow: 0px 0px 100px rgb(200, 200, 200);
+    padding: 8px 0px 5px;
+    /* box-shadow: 0px 0px 100px rgb(231, 231, 231); */
     width: 100%;
+    margin-bottom: 10px;
+    background: rgb(24,40,40);
+    background: linear-gradient(0deg, rgba(24,40,40,1) 0%, rgba(43,77,63,1) 50%, rgba(90,140,125,1) 100%);
 }
+
+header .app_logo {
+    margin-left: 20px;
+    width: 70px;
+    cursor: pointer;
+}
+
+header .app_logo:hover {
+    transition: all 0.2s;
+    transform: scale(1.15);
+}
+
+header .menu-list {
+    float: right;
+    margin-right: 80px;
+    margin-top: 23px;
+}
+
+header .menu-list li {
+    float: left;
+    margin-left: 30px; 
+    list-style-type: none;
+    cursor: pointer;
+
+    /* A voir si c'est beau ou pas ? */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header .menu-list li:hover {
+    transition: all 0.2s;
+    transform: scale(1.15);
+}
+
+header .menu__mobile {
+    width: 50px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.menu__mobile_button {
+    position: relative;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+    background-color: transparrent;
+    z-index: 55;
+}
+
+.menu__mobile_button.active {
+    z-index: 55;
+}
+
+.menu__mobile_button.active span {
+    opacity: 0;
+}
+
+.menu__mobile_button.active.menu__mobile_button:before, .menu__mobile_button.active.menu__mobile_button:after {
+    top: 40%;
+}
+
+.menu__mobile_button.active.menu__mobile_button:before {
+    transition: all 0.3s;
+    transform: rotate(45deg);
+}
+
+.menu__mobile_button.active.menu__mobile_button:after {
+    transition: all 0.3s;
+    transform: rotate(-45deg);
+}
+
+.menu__mobile_button span, .menu__mobile_button:before, .menu__mobile_button:after {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.menu__mobile_button:before, .menu__mobile_button:after {
+    content: "";
+    transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1), transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+  
+.menu__mobile_button span {
+    top: 42.4999%;
+    transform: translateY(-50%);
+}
+
+.menu__mobile_button:before {
+    top: 0;
+}
+
+.menu__mobile_button:after {
+    top: calc(100% - 6px);
+}  
 /* 📚 End of Header/Nav-Bar style 📚 */
 
-.hero-section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+/* 😎 Burger Menu Pop'up style : 😎 */
+.popup-menu {
+    background-color: rgba(0, 0, 0, 0.205);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    opacity: 0;
+    padding: 20px;
 }
+
+.popup-menu ul {
+    list-style-type: none;
+}
+
+.popup-menu.active2 {
+    opacity: 1;
+    transition: opacity 0.8s ease-out; 
+}
+/* 😎 End of Burger Menu Pop'up style 😎 */
 
 .hero-section .title-description {
-    padding: 130px;
-    font-size: 50px;
-    grid-area: 1 / 1 / 6 / 3;
-}
-
-.hero-section .image-box { 
-    padding-top: 50px;
-    grid-area: 1 / 3 / 6 / 6;
-    text-align: center;
-}
-
-.hero-section .image-box img {
-    width: 700px;
+    font-size: 20px;
+    /* grid-area: 1 / 1 / 6 / 6; */
 }

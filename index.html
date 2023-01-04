@@ -28,20 +28,42 @@
 </head>
 
 <header>
-    <p>nav</p>
+    <img class="app_logo" src="logo_assets/FINAL_Logo_RemoveBG.png" alt="app_logo">
+    <div class="menu__mobile"><div class="menu__mobile_button"><span></span></div></div>
+
+    <!-- <ul class="menu-list">
+        <li>Accueil</li>
+        <li>Nos produits</li>
+        <li>Contact</li>
+    </ul> -->
 </header>
 
 <body>
+    <section id="burger-menu" class="popup-menu">
+        <ul>
+            <li>Accueil</li>
+            <li>Nos produits</li>
+            <li>Contact</li>
+        </ul>
+    </section>
+
     <section class="hero-section">
-        <div class="title-description"> 
+       <!--  <div class="title-description"> 
             <h1>Titre</h1>
             <p> description</p>
-        </div>
-    
-        <div class="image-box"> 
-            <img src="https://cdni.iconscout.com/illustration/premium/thumb/people-surrounded-by-natural-ecological-and-renewable-energy-5646751-4696868.png"/>
-        </div>
+        </div> -->
     </section>
 </body>
+
+<script type="text/javascript">
+    console.log("🎉 Eco'Bin is starting !");
+
+    'use strict';
+    const open = document.querySelector('.menu__mobile_button');
+    open.addEventListener('click', () => {
+        open.classList.toggle('active');
+        document.getElementById("burger-menu").classList.toggle('active2');
+    });
+</script>
 
 </html>

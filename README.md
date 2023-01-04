@@ -1,2 +1,2 @@
 # Eco'Bin 🌱
-Ce repository regroupe tout les services numériques de la société Eco'Bin, ici le site web officiel.
+Ce repository regroupe tout les services numériques de la société Eco'Bin, ici d'abord un site web.
